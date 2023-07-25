@@ -27,9 +27,9 @@
 namespace
 {
 	// ウインドウのクラス名
-	LPCTSTR CLASS_NAME = _T("Sound Editer_TYPE2");
+	LPCTSTR CLASS_NAME = _T("Sound_Editer");
 	// ウインドウのキャプション名
-	LPCTSTR WINDOW_NAME = _T("Sound Editer");
+	LPCTSTR WINDOW_NAME = _T("Sound_Editer");
 
 	// スクリーンの幅
 	const int SCREEN_WIDTH = 1280;

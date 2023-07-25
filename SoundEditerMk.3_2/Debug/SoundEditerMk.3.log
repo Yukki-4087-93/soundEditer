@@ -1,5 +1,2 @@
-﻿  soundmanager.cpp
-SoundWAVE.obj : warning LNK4204: 'C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\vc140.pdb' に参照するモジュールのデバッグ情報がありません。デバッグ情報を無視してオブジェクトをリンクします。
-SoundMp3.obj : warning LNK4204: 'C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\vc140.pdb' に参照するモジュールのデバッグ情報がありません。デバッグ情報を無視してオブジェクトをリンクします。
-  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\SoundEditerMk.3.exe
+﻿  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\SoundEditerMk.3.exe
   SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\SoundEditerMk.3.pdb (Full PDB)
