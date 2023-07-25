@@ -50,6 +50,7 @@ const float SOUND_PITCH = 1.0f;							//音程の初期値
 const float SOUND_VOLUME = 1.0f;						//音量の初期値
 const float CHANGE_VOLUME = 0.002f;						//徐々に変わる音量の変更値
 const int MAX_COUNT = 24;								//カウンターの最大数
+const int ADD_COUNTER = 1;								//カウンターを加算する値
 }
 
 // 上位のパラメータ設定で、指定した列挙の
@@ -518,9 +519,9 @@ void CSoundWave::Stop()
 //--------------------------------------
 //音量をカウントをカウントする
 //--------------------------------------
-void CSoundWave::SetCounter(int count)
+void CSoundWave::SetCounter()
 {
-	m_nCounter += count;
+	m_nCounter += ADD_COUNTER;
 
 	if (m_nCounter > MAX_COUNT)
 	{

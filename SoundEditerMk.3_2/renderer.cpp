@@ -109,11 +109,9 @@ HRESULT CRenderer::Init(HWND hWnd, bool bWindow)
 
 	m_pD3DDevice->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_CURRENT);
 
-#ifdef _DEBUG
 	// デバッグ情報表示用フォントの生成
 	D3DXCreateFont(m_pD3DDevice, 24, 0, 0, 0, FALSE, SHIFTJIS_CHARSET,
-		OUT_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH, _T("Terminal"), &m_pFont);
-#endif
+	OUT_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH, _T("Terminal"), &m_pFont);
 
 	return S_OK;
 }
@@ -123,15 +121,12 @@ HRESULT CRenderer::Init(HWND hWnd, bool bWindow)
 //--------------------------------------
 void CRenderer::Uninit()
 {
-
-#ifdef _DEBUG
 	// デバッグ情報表示用フォントの破棄
 	if (m_pFont != nullptr)
 	{
 		m_pFont->Release();
 		m_pFont = nullptr;
 	}
-#endif // _DEBUG
 
 	// デバイスの破棄
 	if (m_pD3DDevice != nullptr)
@@ -173,10 +168,8 @@ void CRenderer::Draw()
 	{
 		//CObject::DrawAll();
 		
-#ifdef _DEBUG
 		// FPS表示
 		DrawFPS();
-#endif // _DEBUG
 
 		// Direct3Dによる描画の終了
 		m_pD3DDevice->EndScene();
@@ -186,7 +179,6 @@ void CRenderer::Draw()
 	m_pD3DDevice->Present(NULL, NULL, NULL, NULL);
 }
 
-#ifdef _DEBUG
 //--------------------------------------
 //FPSの描画
 //--------------------------------------
@@ -219,7 +211,6 @@ void CRenderer::DrawFPS()
 	// テキスト描画
 	m_pFont->DrawText(NULL, str, -1, &rect, DT_LEFT, D3DCOLOR_ARGB(0xff, 0xff, 0xff, 0xff));
 }
-#endif // _DEBUG
 
 //--------------------------------------
 //デバイスの情報取得

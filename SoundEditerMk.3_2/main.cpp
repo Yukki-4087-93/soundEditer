@@ -110,10 +110,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*lpC
 	// フレームカウント初期化
 	DWORD dwCurrentTime = 0;
 	DWORD dwExecLastTime = timeGetTime();
-#ifdef _DEBUG
+
 	DWORD dwFrameCount = 0;
 	DWORD dwFPSLastTime = dwExecLastTime;
-#endif // _DEBUG
 
 	// ウインドウの表示
 	ShowWindow(hWnd, nCmdShow);
@@ -140,7 +139,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*lpC
 		else
 		{
 			dwCurrentTime = timeGetTime();	// 現在の時間を取得
-#ifdef _DEBUG
 			if ((dwCurrentTime - dwFPSLastTime) >= 500)
 			{// 0.5秒ごとに実行
 				// FPSを算出
@@ -148,7 +146,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*lpC
 				dwFPSLastTime = dwCurrentTime;	// 現在の時間を保存
 				dwFrameCount = 0;
 			}
-#endif // _DEBUG
 
 			if ((dwCurrentTime - dwExecLastTime) >= (1000 / 60))
 			{ // 1/60秒経過
@@ -161,9 +158,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*lpC
 				// 描画処理
 				Draw();
 
-#ifdef _DEBUG
 				dwFrameCount++;
-#endif // _DEBUG
 			}
 		}
 	}

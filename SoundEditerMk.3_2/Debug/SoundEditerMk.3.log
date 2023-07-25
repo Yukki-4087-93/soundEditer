@@ -1,19 +1,5 @@
-﻿  SoundWAVE.cpp
-  SoundMp3.cpp
-  soundmanager.cpp
-  sound.cpp
-  renderer.cpp
-  main.cpp
-  input.cpp
-  application.cpp
-  C/C++ のコード分析を実行しています...
-  コードを生成中...
-  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\SoundEditerMk.3_2\Debug\SoundEditerMk.3.exe
-  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\SoundEditerMk.3_2\Debug\SoundEditerMk.3.pdb (Full PDB)
-c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h(4321): warning C28251: 'joyConfigChanged' に対する整合性のない注釈: このインスタンスには 注釈なし が含まれます。c:\program files (x86)\windows kits\8.1\include\um\joystickapi.h(444) を参照してください。
-c:\users\student\desktop\soundeditermk.3_2\main.cpp(61): warning C28251: 'WinMain' に対する整合性のない注釈: このインスタンスには 注釈なし が含まれます。c:\program files (x86)\windows kits\8.1\include\um\winbase.h(905) を参照してください。
-c:\users\student\desktop\soundeditermk.3_2\soundwave.cpp(111): warning C6031: 戻り値が無視されました: 'CoInitializeEx'
-c:\users\student\desktop\soundeditermk.3_2\soundwave.cpp(429): warning C6385: 'this->m_apSourceVoice' から無効なデータを読み取っています: 読み取り可能なサイズは '1440' バイトですが、'type' バイトを読み取る可能性があります。
-c:\users\student\desktop\soundeditermk.3_2\soundwave.cpp(453): warning C6385: 'this->m_apSourceVoice' から無効なデータを読み取っています: 読み取り可能なサイズは '1440' バイトですが、'type' バイトを読み取る可能性があります。
-c:\users\student\desktop\soundeditermk.3_2\soundwave.cpp(477): warning C6385: 'this->m_apSourceVoice' から無効なデータを読み取っています: 読み取り可能なサイズは '1440' バイトですが、'type' バイトを読み取る可能性があります。
-c:\users\student\desktop\soundeditermk.3_2\soundwave.cpp(488): warning C6386: 'this->m_aPlaySound' への書き込み中にバッファー オーバーランが発生しました: 書き込み可能なサイズは '360' バイトですが、'type' バイトを書き込む可能性があります。
+﻿  soundmanager.cpp
+SoundWAVE.obj : warning LNK4204: 'C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\vc140.pdb' に参照するモジュールのデバッグ情報がありません。デバッグ情報を無視してオブジェクトをリンクします。
+SoundMp3.obj : warning LNK4204: 'C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\vc140.pdb' に参照するモジュールのデバッグ情報がありません。デバッグ情報を無視してオブジェクトをリンクします。
+  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\SoundEditerMk.3.exe
+  SoundEditerMk.3.vcxproj -> C:\Users\student\Desktop\soundEditer\SoundEditerMk.3_2\Debug\SoundEditerMk.3.pdb (Full PDB)

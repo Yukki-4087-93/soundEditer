@@ -60,7 +60,7 @@ public:
 	void SetPartRate(WAVE_LABEL type, int nNumber, float rate);			// ピッチの部分設定
 	void Stop(WAVE_LABEL type, int nNumber);							// 一部停止
 	void Stop();														// 全停止
-	void SetCounter(int count);
+	void SetCounter();
 	int GetCpounter() { return m_nCounter; }
 
 public:

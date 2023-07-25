@@ -198,7 +198,7 @@ void CSoundManager::Play()
 	{
 		m_pSound_wave->Play(m_pSound_wave->WAVE_SE_D, m_pSound_wave->GetCpounter());
 		m_pSound_wave->SetVolume(m_pSound_wave->WAVE_SE_D, 0.5f);
-		m_pSound_wave->SetCounter(1);
+		m_pSound_wave->SetCounter();
 	}
 
 	if (CApplication::GetInput()->GetkeyboardPress(DIK_UP))
