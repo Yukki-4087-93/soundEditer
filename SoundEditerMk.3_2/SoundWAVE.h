@@ -92,8 +92,7 @@ private:
 	WAVE_LABEL m_type;													// サウンドのタイプ
 	int m_nVolSeter;													// 緩やかにサウンドを下げる時に使用する
 	int m_nNumber;														// ナンバーを代入する変数
-	int m_nCounter;
-
+	int m_nCounter;														// 音量の変更をする変数
 };
 
 #endif // !_SOUNDWAVE_H_
